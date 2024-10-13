@@ -2,11 +2,7 @@
 
 --> Project <Part (1)>
 
-> What we are do in this project ?
-
-In this project we create a terminal and build a lot of command such us cat,ls,help,exit also a wildcard can use itwith command also we spreate all commands file and built static libary then link staticly with main file.
-
-> How can you run the project program using a Makefile ?
+> To Compile Project using Makefile
 
 * make createObj --------------> Create Object files 
 
@@ -14,26 +10,20 @@ In this project we create a terminal and build a lot of command such us cat,ls,h
 
 * make linkSt   --------------> Static linking: Static libary with main program 
 
-> How to delete all object, executable file also static library using a Makefile ?
+> Optional in Makefile
 
-* make clean  
+* make clean ------> delete all object file , exeutable file and static libary file whchi is lib.a
 
+> List all project file  
 
-> What kind of checking error are you put for program ?
+* main.c: File of main program that handle a type of command and run a terminal   
+* cat.c:  C file that include the code of cat command that print conrect of file
+* ls.c:   C file that include the code of ls command that list a directory
+* help.c: File that print all command and what should they do 
+* exit.c: File that exit the program using signale 
 
-** There is multiple checking error for the program such as sysrem call error (call system file),write a wrong 
-command also try to cat or list a file that does not exist
+                                ----------------------------------------
 
-> What a command we can use it in Terminal program ?
-
---> <ls>
---> <cat>
---> <help>
---> <exit>
---> <wildcard we can use it with commands>
-
-
-                        ----------------------------------------------------------------
 
 
 
